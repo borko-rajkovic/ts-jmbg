@@ -1,4 +1,10 @@
-# TS-JMBG [![npm version](https://badge.fury.io/js/ts-jmbg.svg)](https://www.npmjs.com/package/ts-jmbg)
+# TS-JMBG
+
+[![npm version](https://badge.fury.io/js/ts-jmbg.svg)](https://www.npmjs.com/package/ts-jmbg)
+![GitHub](https://img.shields.io/github/license/borko-rajkovic/ts-jmbg)
+![npm](https://img.shields.io/npm/dt/ts-jmbg)
+![Travis (.org)](https://img.shields.io/travis/borko-rajkovic/ts-jmbg)
+![Coveralls github](https://img.shields.io/coveralls/github/borko-rajkovic/ts-jmbg)
 
 TS-JMBG - Library for validating, decoding and generating random JMBG written in Typescript.
 

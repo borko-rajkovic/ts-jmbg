@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "test:watch": "jest --config jestconfig.json --watch",
-    "test:coverage": "jest --config jestconfig.json --collectCoverage",
+    "coverage": "npm test -- --coverage",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
@@ -40,6 +40,7 @@
   "homepage": "https://github.com/borko-rajkovic/ts-jmbg#readme",
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "coveralls": "^3.1.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "ts-jest": "^26.4.4",

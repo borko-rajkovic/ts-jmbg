@@ -6,6 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
+    "test:watch": "jest --config jestconfig.json --watch",
+    "test:coverage": "jest --config jestconfig.json --collectCoverage",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
@@ -22,7 +24,15 @@
   "author": "Borko Rajković",
   "license": "MIT",
   "keywords": [
-    "JMBG"
+    "JMBG",
+    "ЈМБГ",
+    "ЕМБГ",
+    "Serbia",
+    "Croatia",
+    "Macedonia",
+    "Slovenia",
+    "Montenegro",
+    "Yugoslavia"
   ],
   "bugs": {
     "url": "https://github.com/borko-rajkovic/ts-jmbg/issues"

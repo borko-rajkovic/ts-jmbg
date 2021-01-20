@@ -47,7 +47,7 @@ import { isJMBGValid } from 'ts-jmbg';
 console.log(isJMBGValid('0101990360007')); // true
 
 // Invalid JMBG
-console.log(isJMBGValid('0101001890123')); // true
+console.log(isJMBGValid('0101001890123')); // false
 ```
 
 ### Validate

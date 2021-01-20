@@ -38,10 +38,22 @@ yarn add ts-jmbg
 
 ## Examples
 
+### Is Valid
+
+```javascript
+import { isJMBGValid } from 'ts-jmbg';
+
+// Valid JMBG
+console.log(isJMBGValid('0101990360007')); // true
+
+// Invalid JMBG
+console.log(isJMBGValid('0101001890123')); // true
+```
+
 ### Validate
 
 ```javascript
-import { validateJMBG } from './index';
+import { validateJMBG } from 'ts-jmbg';
 
 // Valid JMBG
 const validJMBG = validateJMBG('0101990360007');
@@ -58,29 +70,33 @@ console.log(invalidJMBG.reason); // INVALID_CONTROL_NUMBER
 ### Generate Random JMBG
 
 ```javascript
-import { generateRandomJMBG, validateJMBG } from './index';
+import { generateRandomJMBG, isJMBGValid } from 'ts-jmbg';
 
 // Generate new valid JMBG
 const newJMBG = generateRandomJMBG();
 
-console.log(`Generated JMBG: ${newJMBG}, is valid: ${validateJMBG(newJMBG).valid}`);
+console.log(`Random JMBG: ${newJMBG}, is valid: ${isJMBGValid(newJMBG)}`);
 ```
 
 ### Decode JMBG
 
 ```javascript
-import { decodeJMBG } from './index';
+import { decodeJMBG } from 'ts-jmbg';
 
-const decodedJMBG = decodeJMBG('0101001250028');
+try {
+  const decodedJMBG = decodeJMBG('0101001250028');
 
-// {
-//   day: 1,
-//   gender: 'Male',
-//   month: 1,
-//   place: 'Cetinje',
-//   region: 'Crna Gora',
-//   year: 2001,
-// }
+  // {
+  //   day: 1,
+  //   gender: 'Male',
+  //   month: 1,
+  //   place: 'Cetinje',
+  //   region: 'Crna Gora',
+  //   year: 2001,
+  // }
+} catch (error) {
+  //  invalid JMBG
+}
 ```
 
 ## Todo

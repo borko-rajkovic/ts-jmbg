@@ -1,6 +1,19 @@
-import { validateJMBG, generateRandomJMBG, decodeJMBG, InvalidReason, PersonData, INVALID_JMBG_ERROR } from '../index';
+import {
+  validateJMBG,
+  generateRandomJMBG,
+  decodeJMBG,
+  InvalidReason,
+  PersonData,
+  INVALID_JMBG_ERROR,
+  isJMBGValid,
+} from '../index';
 
 describe('Validate JMBG', () => {
+  it('isJMBGValid', () => {
+    expect(isJMBGValid('0101001250028')).toBe(true);
+    expect(isJMBGValid('123456789012')).toBe(false);
+  });
+
   it('Fail if number instead of string', () => {
     const validationResult = validateJMBG((123 as unknown) as string);
     expect(validationResult.valid).toBe(false);

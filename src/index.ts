@@ -26,7 +26,17 @@ export interface ValidationResult {
 
 /**
  * Checks if JMBG is valid
- *
+ * @param jmbg
+ * @returns {boolean} true or false
+ */
+export function isValidJMBG(jmbg: string): boolean {
+  const validationResult = validateJMBG(jmbg);
+  return validationResult.valid;
+}
+
+/**
+ * Checks if JMBG is valid
+ * @deprecated use isValidJMBG
  * @param jmbg
  * @returns {boolean} true or false
  */

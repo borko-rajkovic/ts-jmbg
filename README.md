@@ -41,13 +41,13 @@ yarn add ts-jmbg
 ### Is Valid
 
 ```javascript
-import { isJMBGValid } from 'ts-jmbg';
+import { isValidJMBG } from 'ts-jmbg';
 
 // Valid JMBG
-console.log(isJMBGValid('0101990360007')); // true
+console.log(isValidJMBG('0101990360007')); // true
 
 // Invalid JMBG
-console.log(isJMBGValid('0101001890123')); // false
+console.log(isValidJMBG('0101001890123')); // false
 ```
 
 ### Validate
@@ -70,12 +70,12 @@ console.log(invalidJMBG.reason); // INVALID_CONTROL_NUMBER
 ### Generate Random JMBG
 
 ```javascript
-import { generateRandomJMBG, isJMBGValid } from 'ts-jmbg';
+import { generateRandomJMBG, isValidJMBG } from 'ts-jmbg';
 
 // Generate new valid JMBG
 const newJMBG = generateRandomJMBG();
 
-console.log(`Random JMBG: ${newJMBG}, is valid: ${isJMBGValid(newJMBG)}`);
+console.log(`Random JMBG: ${newJMBG}, is valid: ${isValidJMBG(newJMBG)}`);
 ```
 
 ### Decode JMBG

@@ -1,14 +1,20 @@
 import {
-  validateJMBG,
-  generateRandomJMBG,
   decodeJMBG,
-  InvalidReason,
-  PersonData,
+  generateRandomJMBG,
   INVALID_JMBG_ERROR,
+  InvalidReason,
   isJMBGValid,
-} from '../index';
+  isValidJMBG,
+  PersonData,
+  validateJMBG,
+} from '..';
 
 describe('Validate JMBG', () => {
+  it('isValidJMBG', () => {
+    expect(isValidJMBG('0101001250028')).toBe(true);
+    expect(isValidJMBG('123456789012')).toBe(false);
+  });
+
   it('isJMBGValid', () => {
     expect(isJMBGValid('0101001250028')).toBe(true);
     expect(isJMBGValid('123456789012')).toBe(false);

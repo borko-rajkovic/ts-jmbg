@@ -35,17 +35,6 @@ export function isValidJMBG(jmbg: string): boolean {
 }
 
 /**
- * Checks if JMBG is valid
- * @deprecated use isValidJMBG
- * @param jmbg
- * @returns {boolean} true or false
- */
-export function isJMBGValid(jmbg: string): boolean {
-  const validationResult = validateJMBG(jmbg);
-  return validationResult.valid;
-}
-
-/**
  * Validates JMBG
  *
  * @param jmbg

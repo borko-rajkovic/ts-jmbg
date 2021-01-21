@@ -3,7 +3,6 @@ import {
   generateRandomJMBG,
   INVALID_JMBG_ERROR,
   InvalidReason,
-  isJMBGValid,
   isValidJMBG,
   PersonData,
   validateJMBG,
@@ -13,11 +12,6 @@ describe('Validate JMBG', () => {
   it('isValidJMBG', () => {
     expect(isValidJMBG('0101001250028')).toBe(true);
     expect(isValidJMBG('123456789012')).toBe(false);
-  });
-
-  it('isJMBGValid', () => {
-    expect(isJMBGValid('0101001250028')).toBe(true);
-    expect(isJMBGValid('123456789012')).toBe(false);
   });
 
   it('Fail if number instead of string', () => {

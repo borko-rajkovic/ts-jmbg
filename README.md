@@ -101,7 +101,7 @@ try {
 
 ## Related
 
-- [VSCode](https://github.com/borko-rajkovic/vscode-jmbg)
+- [VSCode extension](https://github.com/borko-rajkovic/vscode-jmbg)
 
 ## Todo
 

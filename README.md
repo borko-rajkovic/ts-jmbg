@@ -99,6 +99,10 @@ try {
 }
 ```
 
+## Related
+
+- [VSCode](https://github.com/borko-rajkovic/vscode-jmbg)
+
 ## Todo
 
 - [ ] validateJMBG should check if region is correct. (RR)

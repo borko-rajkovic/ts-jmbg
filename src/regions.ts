@@ -19,7 +19,7 @@ export const Regions: IRegion[] = [
       '01': 'Bosna i Hercegovina',
       '02': 'Crna Gora',
       '03': 'Hrvatska',
-      '04': 'Makedonija',
+      '04': 'Republika Sjeverna Makedonija',
       '05': 'Slovenija',
       '07': 'Srbija',
       '08': 'Vojvodina',
@@ -70,7 +70,7 @@ export const Regions: IRegion[] = [
     },
   },
   {
-    label: 'Makedonija',
+    label: 'Republika Sjeverna Makedonija',
     regions: {
       '41': 'Bitola',
       '42': 'Kumanovo',
